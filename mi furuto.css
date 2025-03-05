@@ -1,0 +1,253 @@
+/*  ESTILOS DEL MENÚ DE NAVEGACIÓN */
+/* ============================= */
+header {
+    background-color: #B8978C; /* Color sofisticado */
+    padding: 20px 0; /* Espaciado mejorado */
+    border-radius: 12px; /* Bordes redondeados con un toque más sutil */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave y sutil */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaciado equilibrado entre el logo y los enlaces */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================= */
+/*  ESTILOS DE LOS LINKS */
+/* ============================= */
+nav ul li {
+    margin: 0 18px; /* Espaciado entre los elementos de manera equilibrada */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E5E5E5; /* Color de texto suave */
+    font-size: 18px; /* Tamaño de fuente ligeramente más pequeño para armonizar */
+    font-weight: 600; /* Peso de fuente más moderado */
+    padding: 14px 22px; /* Padding ajustado para proporcionar un buen balance */
+    border-radius: 30px; /* Bordes más redondeados para suavizar el aspecto */
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase; /* Mayúsculas para un toque de elegancia */
+    background-color: #B8978C; /* Fondo igual al del header */
+}
+
+nav ul li a:hover {
+    background-color: #D4C2B2; /* Efecto al pasar el cursor */
+    color: #fff;
+    transform: scale(1.08); /* Leve escala para un efecto más suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más visible al pasar el cursor */
+}
+
+nav ul li a:active {
+    background-color: #D4C2B2; /* Tonalidad dorada más oscura al hacer clic */
+}
+
+/* ============================= */
+/*  ESTILOS DEL LOGO */
+/* ============================= */
+nav ul .logo {
+    margin: 0 25px; /* Ajustar espacio entre el logo y los enlaces */
+}
+
+nav ul .logo img {
+    max-width: 90px; /* Un poco más pequeño para darle un toque elegante */
+    height: auto;
+    display: block;
+}
+/* ============================= */
+/*  ESTILOS GENERALES */
+/* ============================= */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Color de fondo claro */
+    color: #333; /* Color de texto oscuro para legibilidad */
+}
+
+/* ENCABEZADO */
+.encabezado {
+    text-align: center; /* Centra el contenido del encabezado */
+    background-color: #F1E3D3; /* Color de fondo suave */
+    padding: 40px;
+    margin-top: 20px;
+    border-bottom: 4px solid #B8978C; /* Línea decorativa en la parte inferior */
+}
+
+
+.encabezado h1 {
+    font-size: 36px;
+    color: #5A3E36; /* Color del texto del título */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.encabezado p {
+    font-size: 22px;
+    color: #7A5B52; /* Color del texto del párrafo */
+    margin-top: 10px; /* Espacio entre el título y el párrafo */
+}
+
+
+/* ======== ESTILO GENERAL DE LAS SECCIONES ======== */
+.section {
+    display: flex; /* Permite que el texto y las imágenes estén en la misma línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Separa el texto y las imágenes */
+    background: white; /* Fondo blanco para contraste */
+    padding: 40px; /* Espaciado interno para una apariencia ordenada */
+    margin: 40px auto; /* Espaciado externo y centrado */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición */
+    width: 85%; /* Ancho del contenedor */
+    max-width: 1200px; /* Máximo ancho para evitar que se expanda demasiado */
+}
+
+/* ======== EFECTO HOVER ======== */
+/* Cuando el usuario pasa el mouse sobre la sección, se eleva un poco */
+.section:hover {
+    transform: translateY(-5px);
+}
+
+/* ======== ALTERNAR EL ORDEN DE LAS SECCIONES ======== */
+/* Hace que las secciones impares cambien el orden de la imagen y el texto */
+.section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+/* ======== ESTILOS DEL TEXTO ======== */
+.texto {
+    width: 50%; /* El texto ocupa la mitad del contenedor */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Título de cada sección */
+.texto h2 {
+    font-size: 32px; /* Tamaño grande para destacar */
+    color: #a38f85; /* Color azul para resaltar */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+    font-weight: bold; /* Negrita para mejor visibilidad */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Párrafos de cada sección */
+.texto p {
+    font-size: 18px; /* Tamaño de fuente adecuado para la lectura */
+    line-height: 1.8; /* Espaciado entre líneas para mejor legibilidad */
+    text-align: justify; /* Justificación del texto */
+}
+
+/* ======== CONTENEDOR DE LAS IMÁGENES ======== */
+.imagenes-container {
+    display: flex; /* Coloca las imágenes en una fila */
+    gap: 10px; /* Espaciado entre imágenes */
+    width: 45%; /* El contenedor de imágenes ocupa el 45% */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+/* ======== ESTILOS DE LAS IMÁGENES ======== */
+.imagen-seccion {
+    width: 32%; /* Cada imagen ocupa aproximadamente un tercio del contenedor */
+    height: 200px; /* Altura fija para mantener uniformidad */
+    object-fit: cover; /* Ajuste de imagen para que cubra sin deformarse */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* ======== DISEÑO ADAPTABLE (RESPONSIVE) ======== */
+/* Se aplica cuando la pantalla es más pequeña (tablets y móviles) */
+@media (max-width: 1024px) {
+    .section {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .texto, .imagenes-container {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .imagenes-container {
+        justify-content: center; /* Centra las imágenes */
+    }
+
+    .imagen-seccion {
+        width: 30%; /* Reduce el tamaño de las imágenes en dispositivos más pequeños */
+        height: 150px; /* Ajusta la altura para mantener proporciones */
+    }
+}
+
+
+
+
+
+/*pie de pagina*/
+/* 🎨 Paleta de colores */
+:root {
+    --primary-color: #b8978c;  /* Azul oscuro */
+    --secondary-color:#D4C2B2; /* Gris azulado */
+    --accent-color: #ebe9df;  /* Rojo vibrante */
+    --text-color: #252525;  /* Blanco grisáceo */
+}
+
+/* 🎩 Estilos del Footer */
+footer {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    text-align: center;
+    padding: 25px 0;
+    font-family: "Arial", sans-serif;
+    margin-top: 40px;
+}
+
+/* 📧 Contacto */
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*  Redes sociales ordenadas */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Iconos estilizados */
+.social-icons a {
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    background: var(--accent-color);
+}

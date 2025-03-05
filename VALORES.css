@@ -1,0 +1,154 @@
+/*  ESTILOS DEL MENÚ DE NAVEGACIÓN */
+/* ============================= */
+header {
+    background-color: #B8978C; /* Color sofisticado */
+    padding: 20px 0; /* Espaciado mejorado */
+    border-radius: 12px; /* Bordes redondeados con un toque más sutil */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave y sutil */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaciado equilibrado entre el logo y los enlaces */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================= */
+/*  ESTILOS DE LOS LINKS */
+/* ============================= */
+nav ul li {
+    margin: 0 18px; /* Espaciado entre los elementos de manera equilibrada */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E5E5E5; /* Color de texto suave */
+    font-size: 18px; /* Tamaño de fuente ligeramente más pequeño para armonizar */
+    font-weight: 600; /* Peso de fuente más moderado */
+    padding: 14px 22px; /* Padding ajustado para proporcionar un buen balance */
+    border-radius: 30px; /* Bordes más redondeados para suavizar el aspecto */
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase; /* Mayúsculas para un toque de elegancia */
+    background-color: #B8978C; /* Fondo igual al del header */
+}
+
+nav ul li a:hover {
+    background-color: #D4C2B2; /* Efecto al pasar el cursor */
+    color: #fff;
+    transform: scale(1.08); /* Leve escala para un efecto más suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más visible al pasar el cursor */
+}
+
+nav ul li a:active {
+    background-color: #D4C2B2; /* Tonalidad dorada más oscura al hacer clic */
+}
+
+/* ============================= */
+/*  ESTILOS DEL LOGO */
+/* ============================= */
+nav ul .logo {
+    margin: 0 25px; /* Ajustar espacio entre el logo y los enlaces */
+}
+
+nav ul .logo img {
+    max-width: 90px; /* Un poco más pequeño para darle un toque elegante */
+    height: auto;
+    display: block;
+}
+/* ============================= */
+/*  ESTILOS GENERALES */
+/* ============================= */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Color de fondo claro */
+    color: #333; /* Color de texto oscuro para legibilidad */
+}
+
+
+/* Contenedor principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo de la cabecera */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #a38f85;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los encabezados de sección */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #D4C2B2;
+}
+
+/* Estilos para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #c6c0bd;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para las listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Añadir sombra a las secciones */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

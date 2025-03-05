@@ -1,0 +1,270 @@
+/* ============================= */
+/*  ESTILOS GENERALES */
+/* ============================= */
+/* ============================= */
+/*  ESTILOS DEL MENÚ DE NAVEGACIÓN */
+/* ============================= */
+header {
+    background-color: #B8978C; /* Color sofisticado */
+    padding: 20px 0; /* Espaciado mejorado */
+    border-radius: 12px; /* Bordes redondeados con un toque más sutil */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave y sutil */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaciado equilibrado entre el logo y los enlaces */
+    align-items: center;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================= */
+/*  ESTILOS DE LOS LINKS */
+/* ============================= */
+nav ul li {
+    margin: 0 18px; /* Espaciado entre los elementos de manera equilibrada */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E5E5E5; /* Color de texto suave */
+    font-size: 18px; /* Tamaño de fuente ligeramente más pequeño para armonizar */
+    font-weight: 600; /* Peso de fuente más moderado */
+    padding: 14px 22px; /* Padding ajustado para proporcionar un buen balance */
+    border-radius: 30px; /* Bordes más redondeados para suavizar el aspecto */
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase; /* Mayúsculas para un toque de elegancia */
+    background-color: #B8978C; /* Fondo igual al del header */
+}
+
+nav ul li a:hover {
+    background-color: #D4C2B2; /* Efecto al pasar el cursor */
+    color: #fff;
+    transform: scale(1.08); /* Leve escala para un efecto más suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más visible al pasar el cursor */
+}
+
+nav ul li a:active {
+    background-color: #D4C2B2; /* Tonalidad dorada más oscura al hacer clic */
+}
+
+/* ============================= */
+/*  ESTILOS DEL LOGO */
+/* ============================= */
+nav ul .logo {
+    margin: 0 25px; /* Ajustar espacio entre el logo y los enlaces */
+}
+
+nav ul .logo img {
+    max-width: 90px; /* Un poco más pequeño para darle un toque elegante */
+    height: auto;
+    display: block;
+}
+
+
+
+
+nav ul .logo img {
+    max-width: 100px; /* Adaptabilidad */
+    height: auto;
+    display: block;
+}
+
+/* ============================= */
+/*  ESTILOS DEL CONTENEDOR PRINCIPAL */
+/* ============================= */
+/* ========================== */
+/* ESTILOS DEL CARRUSEL       */
+/* ========================== */
+
+/* Contenedor principal */
+.carousel-container {
+    position: relative;
+    width: 80vw; /* Ocupará el 80% del ancho de la pantalla */
+    height: 60vh; /* Ocupará el 60% de la altura de la pantalla */
+    overflow: hidden; /* Oculta las imágenes fuera del área visible */
+    margin: auto; /* Centra horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Carrusel que contiene todas las imágenes */
+.carousel {
+    display: flex;
+    padding: 0;
+    width: 200%; /* 100% por cada imagen */
+    animation: slide 100s infinite; /* Transición automática */
+}
+
+/* Cada imagen dentro del carrusel */
+.slide {
+    width: 200%; /* Cada imagen ocupa 1/4 del contenedor */
+}
+
+/* Estilo de las imágenes */
+.slide img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover; /* Ajuste de imagen sin deformar */
+    border-radius: 10px;
+}
+
+/* Animación para mover el carrusel horizontalmente */
+@keyframes slide {
+    0% { transform: translateX(50); } /* Comienza en la posición inicial */
+    25% { transform: translateX(-100%); } /* Mueve la primera imagen */
+    50% { transform: translateX(-100%); } /* Mueve la segunda imagen */
+    75% { transform: translateX(-100%); } /* Mueve la tercera imagen */
+    85% { transform: translateX(-100%); } /* Mueve la cuarta imagen */
+    95% { transform: translateX(-100%); } /* Mueve la quinta imagen */
+    100% { transform: translateX(-100%); } /* Mueve la sexta imagen */
+
+
+    100% { transform: translateX(50); } /* Regresa a la posición inicial */
+}
+
+/*texto e imagenes de ccontenido */
+/* Estilos globales */
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo y color de texto */
+
+
+
+
+/* Títulos */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Sección de Reflexión */
+.reflexion {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Galería de Imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.image {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Efecto al pasar el mouse sobre las imágenes */
+.image:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de Página */
+footer {
+    background-color: #B8978C;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+/*pie de pagina*/
+/* 🎨 Paleta de colores */
+:root {
+    --primary-color: #b8978c;  /* Azul oscuro */
+    --secondary-color:#D4C2B2; /* Gris azulado */
+    --accent-color: #ebe9df;  /* Rojo vibrante */
+    --text-color: #252525;  /* Blanco grisáceo */
+}
+
+/* 🎩 Estilos del Footer */
+footer {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    text-align: center;
+    padding: 25px 0;
+    font-family: "Arial", sans-serif;
+    margin-top: 40px;
+}
+
+/* 📧 Contacto */
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*  Redes sociales ordenadas */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Iconos estilizados */
+.social-icons a {
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    background: var(--accent-color);
+}
